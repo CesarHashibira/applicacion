@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">F1 Store</string>
+    <string name="menu_home">menu home</string>
+    <string name="menu_categories">menu categories</string>
+    <string name="menu_cart">menu cart</string>
+    <string name="menu_profile">menu profile</string>
+    <string name="comprar_ahora">comprar ahora</string>
+    <string name="ver">Ver</string>
+</resources>

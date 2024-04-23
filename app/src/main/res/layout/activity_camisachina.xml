@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camisachina"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Imagen del producto -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/imageViewProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="292dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/chone" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSizes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/imageViewProduct"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true">
+
+                <RadioButton
+                    android:id="@+id/radioButtonSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Large"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonExtraLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Extra Large"/>
+
+            </RadioGroup>
+
+
+            <!-- Selector de Fecha de Entrega -->
+            <TextView
+                android:id="@+id/textViewDeliveryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGroupSizes"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:text="Fecha de Entrega" />
+
+            <Button
+                android:id="@+id/buttonSelectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDeliveryDate"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="Seleccionar Fecha" />
+
+            <!-- Selector de Hora de Entrega -->
+            <TextView
+                android:id="@+id/textViewDeliveryTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonSelectDate"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:text="Hora de Entrega" />
+
+            <Button
+                android:id="@+id/buttonSelectTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDeliveryTime"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="Seleccionar Hora" />
+
+            <!-- Botón de Compra Premium -->
+            <CheckBox
+                android:id="@+id/checkBoxPremium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonSelectTime"
+                android:layout_marginTop="24dp"
+                android:layout_centerHorizontal="true"
+                android:text="Comprar Premium" />
+
+            <!-- Botón de Confirmar Compra -->
+            <Button
+                android:id="@+id/buttonConfirmPurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkBoxPremium"
+                android:layout_marginTop="24dp"
+                android:layout_centerHorizontal="true"
+                android:text="Confirmar Compra" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
